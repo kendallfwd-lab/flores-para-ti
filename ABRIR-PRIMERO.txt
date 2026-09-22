@@ -1,0 +1,12 @@
+UN JARDÍN PARA TI
+
+1. Extrae este ZIP.
+2. Abre index.html en el navegador de tu computadora.
+3. Toca los girasoles y prueba los botones.
+
+No necesitas instalar nada para abrir la versión terminada.
+El sonido se activa con el botón de altavoz.
+
+Para personalizarlo: lee README.md.
+Para verlo en un teléfono que solo previsualiza archivos HTML,
+publica index.html como página estática y abre el enlace.

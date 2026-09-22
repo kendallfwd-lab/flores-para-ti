@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#95d9f4" />
+  <meta name="description" content="Un jardín de flores amarillas para ti. Toca un girasol y descubre algo bonito." />
+  <title>Un jardín para ti · Flores amarillas</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main id="app">
+    <div id="garden" role="img" aria-label="Jardín tridimensional de girasoles bajo un cielo azul. Toca las flores o usa el botón Descubrir una flor."></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Un jardín para ti, inicio"><i data-lucide="flower-2"></i><span>para ti<span class="brand-dot">.</span></span></a>
+      <span class="edition">UN PEQUEÑO DETALLE, UN GRAN CARIÑO</span>
+      <div class="top-actions"><button class="icon-button" id="motion" aria-label="Pausar movimiento" aria-pressed="false"><i data-lucide="pause"></i></button><button class="icon-button" id="sound" aria-label="Activar sonido" aria-pressed="false"><i data-lucide="volume-x"></i></button></div>
+    </header>
+    <section class="intro" aria-labelledby="title">
+      <div class="eyebrow"><span></span> HAY FLORES QUE DICEN MÁS QUE MIL PALABRAS <span></span></div>
+      <h1 id="title">Un jardín <em>para ti, Fabi.</em></h1>
+      <div class="day-label"><i data-lucide="sun"></i> Feliz día de las flores amarillas</div>
+    </section>
+    <div class="hint" id="hint"><i data-lucide="hand"></i><span>Toca un girasol. Hay algo bonito para ti.</span></div>
+    <div class="message" id="message" role="status" aria-live="polite"><i data-lucide="heart"></i><p id="message-text"></p></div>
+    <footer class="bottom-ui">
+      <div class="bottom-note"><i data-lucide="heart"></i><span>Un jardín que nunca se marchita.</span></div>
+      <div class="toolbar" aria-label="Acciones del jardín">
+        <button id="discover" class="tool"><i data-lucide="flower-2"></i><span>Una flor para ti</span></button>
+        <span class="divider"></span>
+        <button id="bloom" class="tool primary"><i data-lucide="sparkles"></i><span>Hazlo florecer</span></button>
+        <span class="divider"></span>
+        <button id="letter" class="tool"><i data-lucide="mail"></i><span>Una cartita</span></button>
+      </div>
+      <div class="signature">HECHO DE SOL Y CARIÑO <span>✦</span></div>
+    </footer>
+    <section id="loading" class="loading" aria-label="Preparando tu jardín">
+      <i data-lucide="flower-2" class="loading-flower"></i>
+      <div class="eyebrow">UN DETALLE PARA ALGUIEN ESPECIAL</div>
+      <h2>Feliz día de las<br /><em>flores amarillas.</em></h2>
+      <p id="loading-text">Está floreciendo algo bonito para ti…</p>
+      <div class="progress-track"><div id="progress"></div></div>
+    </section>
+    <dialog id="letter-dialog" aria-labelledby="letter-title">
+      <button class="icon-button close-dialog" aria-label="Cerrar carta"><i data-lucide="x"></i></button>
+      <div class="letter-icon"><i data-lucide="flower-2"></i></div>
+      <div class="eyebrow">PARA FABI</div>
+      <h2 id="letter-title">Tú haces que<br /><em>todo florezca.</em></h2>
+      <div class="letter-copy" id="letter-copy"></div>
+      <p class="letter-signature" id="letter-signature"></p>
+      <button class="letter-return">Volver a nuestro jardín <i data-lucide="arrow-up-right"></i></button>
+    </dialog>
+    <noscript>Activa JavaScript para visitar tu jardín de flores amarillas.</noscript>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
